@@ -85,6 +85,18 @@ h2{font-size:clamp(30px,4vw,46px);font-weight:800;letter-spacing:-.02em;text-ali
 .step p{color:var(--muted);font-size:15px}
 
 /* renew */
+.intro{max-width:820px;margin:28px auto 0;font-size:18px;color:var(--muted)}
+.intro p+p{margin-top:16px}
+.intro .lead{color:var(--ink);font-size:20px}
+.intro a{color:var(--blue);font-weight:600}
+.cmp{width:100%;max-width:820px;margin:36px auto 0;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:16px}
+.cmp caption{font-weight:700;color:var(--navy);font-size:20px;margin-bottom:14px}
+.cmp th,.cmp td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+.cmp tr:last-child th,.cmp tr:last-child td{border-bottom:0}
+.cmp thead th{background:var(--soft);color:var(--navy)}
+.cmp tbody th{font-weight:600;color:var(--ink)}
+.cmp td{color:var(--muted)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .renew{background:var(--navy);color:#fff;border-radius:20px;padding:44px;display:flex;gap:32px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .renew h2{color:#fff;text-align:left;font-size:clamp(26px,3vw,34px)}
 .renew p{opacity:.85;margin-top:8px;max-width:620px}
@@ -234,6 +246,85 @@ footer{margin-top:90px;border-top:1px solid var(--line);background:#fff;padding:
  ]
 }
 </script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://drcert.com.br/#negocio",
+   "name": "Dr.Cert",
+   "url": "https://drcert.com.br/",
+   "description": "Certificados digitais A1 ICP-Brasil (e-CPF e e-CNPJ) com emissão por videoconferência.",
+   "telephone": "+55 19 93300-6681",
+   "image": "https://drcert.com.br/img/hero.webp",
+   "priceRange": "R$ 139,90",
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "Campinas"
+    },
+    {
+     "@type": "City",
+     "name": "Indaiatuba"
+    },
+    {
+     "@type": "City",
+     "name": "Hortolândia"
+    },
+    {
+     "@type": "City",
+     "name": "Jundiaí"
+    },
+    {
+     "@type": "City",
+     "name": "Limeira"
+    },
+    {
+     "@type": "Country",
+     "name": "Brasil"
+    }
+   ]
+  },
+  {
+   "@type": "Product",
+   "name": "Certificado Digital e-CPF A1",
+   "description": "Certificado ICP-Brasil para pessoa física, arquivo .pfx válido por 12 meses, emissão por videoconferência.",
+   "brand": {
+    "@id": "https://drcert.com.br/#negocio"
+   },
+   "offers": {
+    "@type": "Offer",
+    "price": "139.90",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock",
+    "url": "https://emitircertificadodigital.org/drcert/comprar/ecpf_a1",
+    "seller": {
+     "@id": "https://drcert.com.br/#negocio"
+    }
+   }
+  },
+  {
+   "@type": "Product",
+   "name": "Certificado Digital e-CNPJ A1",
+   "description": "Certificado ICP-Brasil para empresas e MEI, arquivo .pfx válido por 12 meses, emissão por videoconferência.",
+   "brand": {
+    "@id": "https://drcert.com.br/#negocio"
+   },
+   "offers": {
+    "@type": "Offer",
+    "price": "139.90",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock",
+    "url": "https://emitircertificadodigital.org/drcert/comprar/ecnpj_a1",
+    "seller": {
+     "@id": "https://drcert.com.br/#negocio"
+    }
+   }
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -273,6 +364,28 @@ footer{margin-top:90px;border-top:1px solid var(--line);background:#fff;padding:
     <div class="strip-item"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Atendimento pelo WhatsApp</div>
   </div>
 </div>
+
+<section id="o-que-e">
+  <div class="wrap">
+    <h2>O que é certificado digital?</h2>
+    <div class="intro">
+      <p class="lead">Certificado digital é uma identidade eletrônica emitida dentro da <a href="https://www.gov.br/iti/pt-br" target="_blank" rel="noopener">ICP-Brasil</a> que permite assinar documentos com validade jurídica, emitir notas fiscais e acessar sistemas como o e-CAC. O modelo A1 é um arquivo instalado no computador, válido por 12 meses.</p>
+      <p>O Dr.Cert vende certificados digitais A1 ICP-Brasil para pessoa física (e-CPF) e para empresas, inclusive MEI (e-CNPJ), por R$ 139,90 no PIX. O A1 é um arquivo .pfx que pode ser instalado em mais de um computador, entregue ao contador ou enviado a emissores de nota fiscal online como Bling, UpSeller e o emissor do Mercado Livre. Toda a emissão é feita sem sair de casa: você compra pelo site, agenda um horário e faz uma videochamada de cerca de 10 minutos pelo navegador, com seu documento oficial com foto em mãos. Depois da validação aprovada, o certificado é emitido e você tem suporte humano pelo WhatsApp até ele funcionar. Atendemos Campinas, Indaiatuba e região, e clientes de todo o Brasil.</p>
+    </div>
+    <table class="cmp">
+      <caption>Certificado A1 x A3</caption>
+      <thead><tr><th scope="col"><span class="sr-only">Característica</span></th><th scope="col">A1</th><th scope="col">A3</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Formato</th><td>Arquivo .pfx</td><td>Token, cartão ou nuvem</td></tr>
+        <tr><th scope="row">Validade</th><td>12 meses</td><td>Até 5 anos, conforme o produto</td></tr>
+        <tr><th scope="row">Emissores online (Bling, Mercado Livre)</th><td>Sim, envia o arquivo</td><td>Depende do emissor</td></tr>
+        <tr><th scope="row">Mais de um computador</th><td>Sim</td><td>Só com o token ou a nuvem</td></tr>
+        <tr><th scope="row">Precisa de token</th><td>Não</td><td>Sim, exceto na nuvem</td></tr>
+        <tr><th scope="row">No Dr.Cert</th><td>R$ 139,90 no PIX</td><td>Não vendemos</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
 <section id="certificados">
   <div class="wrap">
@@ -314,7 +427,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);background:#fff;padding:
 
 <section id="como-funciona">
   <div class="wrap">
-    <h2>Como funciona</h2>
+    <h2>Como emitir o certificado digital por videoconferência?</h2>
     <div class="steps">
       <div class="step"><div class="num">1</div><h3>Escolha e pague</h3><p>PIX à vista, aprovação na hora. Sem cadastro complicado.</p></div>
       <div class="step"><div class="num">2</div><h3>Agende a validação</h3><p>Você escolhe o melhor horário para a videochamada.</p></div>
@@ -328,8 +441,8 @@ footer{margin-top:90px;border-top:1px solid var(--line);background:#fff;padding:
   <div class="wrap">
     <div class="renew">
       <div>
-        <h2>Seu certificado venceu?</h2>
-        <p>Certificado digital não é renovado: quando vence, faz-se uma nova emissão, com nova validação por vídeo. É o mesmo processo rápido, e os documentos que você já assinou continuam válidos.</p>
+        <h2>Como renovar o certificado digital?</h2>
+        <p>Na prática, certificado digital não é renovado: quando vence, faz-se uma nova emissão, com nova validação por vídeo. É o mesmo processo rápido, e os documentos que você já assinou continuam válidos.</p>
       </div>
       <a class="btn btn-blue" href="#certificados">Emitir novo certificado</a>
     </div>
@@ -362,7 +475,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);background:#fff;padding:
   <div class="wrap foot">
     <div><b style="color:var(--navy)">Dr.Cert</b> · Certificação Digital ICP-Brasil</div>
     <div>Atendemos Campinas, Indaiatuba e região por videoconferência, e todo o Brasil.</div>
-    <div>Venda intermediada por Daniel Rezende, parceiro autorizado.</div>
+    <div>Venda intermediada por Daniel Rezende, parceiro autorizado. Atualizado em novembro de 2026.</div>
   </div>
 </footer>
 
